@@ -15,7 +15,7 @@ module tb_adder_4bit;
             for (j = 0; j < 16; j++) begin
                 a = i;
                 b = j;
-                {expected_cout, expected_s} = a + b;
+                {expected_cout, expected_s} = {1'b0, a} + {1'b0, b};
 
                 #5;
 

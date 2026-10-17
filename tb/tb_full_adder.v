@@ -16,7 +16,7 @@ module tb_full_adder;
                     a = i;
                     b = j;
                     cin = k;
-                    {expected_cout, expected_s} = a + b + cin;
+                    {expected_cout, expected_s} = {1'b0, a} + {1'b0, b} + {1'b0, cin};
 
                     #5;
 
